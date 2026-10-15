@@ -1,0 +1,30 @@
+*{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Isometra", serif;
+    font-weight: 400;
+    font-style: normal;
+    color : #ffffff;
+    background: radial-gradient(circle,#111827, #080911, #22067e );
+}
+#Spaceprojects {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image:
+        radial-gradient(2px 2px at 20px 30px,white,transparent ),
+        radial-gradient(2px 2px at 50px 50px, rgba(255,255,255,0.8),transparent ),
+        radial-gradient(2px 2px at 140px 40px, white,transparent );
+    background-repeat: repeat,repeat,repeat;
+    background-size: 100px 100px,250px 250px,350px 350px;
+}
+.asteroide {
+    font-family: "Isometra", serif;
+    font-weight: 400;
+    font-style: normal;
+    color : #ffffff;
+}
+
