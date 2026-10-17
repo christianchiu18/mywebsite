@@ -13,18 +13,98 @@ body {
 #Spaceprojects {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 140vh;
     background-image:
         radial-gradient(2px 2px at 20px 30px,white,transparent ),
         radial-gradient(2px 2px at 50px 50px, rgba(255,255,255,0.8),transparent ),
         radial-gradient(2px 2px at 140px 40px, white,transparent );
     background-repeat: repeat,repeat,repeat;
     background-size: 100px 100px,250px 250px,350px 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    margin-top: 30px;
 }
+.intro {
+  font-family: "Festive", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  text-align: center;
+}
+.abanico {
+    display: flex;
+    flex-wrap: row;
+    justify-content: center;
+    gap: 20px;
+}
+
 .asteroide {
     font-family: "Isometra", serif;
     font-weight: 400;
     font-style: normal;
     color : #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    transition: transform 0.3s ease-in-out;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.asteroide-icon{
+    width: 100px;
+    height: 100px;
+}
+.asteroide-important-icon {
+    width: 250px;
+    height: 250px;  
+}
+.asteroide-text {
+    background-color:silver;
+    width: fit-content;
+    text-align: center;
+    padding: 10px;
+    border-style: solid;
+    
+}
+.asteroide-importante-text {
+    transform:translateX(60px);
+}
+.asteroide-projects {
+    transform:translateY(140px);
+    
+}
+.asteroide-gym {
+    transform:translateY(50px);
+}
+.asteroide-electronics {
+    transform:translateY(50px);
+}
+.asteroide-books {
+    transform:translateY(140px);
 }
 
+
+
+.asteroide-aboutme {
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    text-align: center;
+    transform:translateY(50px);
+}
+
+#projectsforest {
+    position: relative;
+    width: 100%;       
+    height: 140vh; 
+}
+.forest { 
+    text-align: center;
+}
