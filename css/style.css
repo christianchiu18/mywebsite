@@ -53,8 +53,11 @@ body {
 img{
     transition: transform 0.3s ease-in-out;
 }
-img:hover {
-    transform: scale(1.1);
+.asteroide-icon:hover {
+    transform: scale(1.2);
+}
+.asteroide-important-icon:hover {
+    transform: scale(1.2);
 }
 .asteroide-icon{
     width: 100px;
@@ -62,7 +65,8 @@ img:hover {
 }
 .asteroide-important-icon {
     width: 250px;
-    height: 250px;  
+    height: 250px; 
+    rotate: 40deg;    
 }
 .asteroide-text {
     background-color:silver;
@@ -104,7 +108,34 @@ img:hover {
     position: relative;
     width: 100%;       
     height: 140vh; 
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
 }
 .forest { 
-    text-align: center;
+    position: relative;
+    width: 100%;
 }
+.superficie {
+    display:block;
+    width: 100%;
+    z-index: 0;
+}
+.tree-icon{
+    width: 500px;
+    height: 550px;
+    position: absolute;
+    bottom:10%;
+    left: 50%;
+    z-index: 1;
+}
+.tree1 {
+    transform: translateX(-200px) 
+}
+.tree2 {
+    transform: translateX(-400px) 
+}   
+
+
+
