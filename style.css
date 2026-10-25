@@ -123,7 +123,7 @@ img{
     
 }
 .tree-icon{
-    width: 500px;
+    width: 550px;
     height: 550px;
     bottom:5%;
 }
@@ -154,8 +154,8 @@ img{
     align-items: center;
     gap:10px;
 
-    margin-left: -30vw;
-    margin-right: -30vw;
+    margin-left: -20vw;
+    margin-right: -20vw;
     
 }
 .textree {
