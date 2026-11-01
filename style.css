@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Isometra&family=Playwirte+IT+Trad:wght@100..499&display=swap');
+
 *{    
     margin: 0;
     padding: 0;
@@ -28,7 +30,8 @@ body {
     margin-top: 30px;
 }
 .intro {
-  font-family: "Festive", cursive;
+  font-family: "Playwrite IT Trad", cursive;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
@@ -255,6 +258,34 @@ ESTILOS ABOUT ME
     flex-direction: row;
     gap: 100px;
     align-items: center;
+}
+
+/*
+===================================
+BOOK PAGE STYLES
+===================================
+*/
+
+.books-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap:20px;
+}
+
+dialog.modal-libro {
+    width:90%;
+    max-width: 500px;
+    margin:auto;
+    padding:20px;
+    background-color: #111;
+    color:#fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+dialog.modal-libro::backdrop {
+    background-color: rgba(0,0,0,0,75);
+    backdrop-filter: blur(5px);
 }
 
 

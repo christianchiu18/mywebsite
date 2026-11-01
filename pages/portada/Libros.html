@@ -6,13 +6,6 @@
         <title>Chris's web | Books</title>
 
         <link rel="stylesheet" href="../../style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Isometra&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Isometra&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Festive&family=Isometra&display=swap" rel="stylesheet">
 
     </head>
     <body>
@@ -24,9 +17,7 @@
         <section id="Spaceprojects">
             <div class="intro">
                 <h1>Books</h1>
-            </div>
-            <div class="infobox">
-                This is where I will be adding the books I read.
+                <p>This is where I will be adding the books I read.</p>
             </div>
             <div class="Current-projects">
                 <div class="intro">My favourite book</div>
@@ -42,6 +33,62 @@
                     </div>
                 </div>
             </div>
+            <div class="intro"><h1>My library</h1></div>
         </section>
+        <section id="library">
+            <div class="intro">Latest books</div>
+            <div class="books-grid">
+                <article class="infobox">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.I7uIrIeioj-XS_1SKMpXyAAAAA?r=0&pid=Api&h=220&P=0">
+                    <h3>The foreigner</h3>
+                    <p>Author: Albert Camus</p>
+                    <button class="btn-open">See Details</button>
+                    
+                    <dialog class="modal-libro">
+
+                        <h2>The foreigner</h2>
+                            <p>Date of start:</p>
+                            <p>Date of end: </p>
+                            <button class="btn-close">Close</button>
+                    </dialog>
+
+                </article>
+
+
+                <article class="infobox book-card">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.13zaNCplmVEMHsuPQb-7PwHaLC?r=0&pid=Api&h=220&P=0">
+                    <h3>The Origin</h3>
+                    <p>Author: Dan Brown</p>
+                    <button class="btn-open">See Details</button>
+
+                    <dialog class="modal-libro">
+                        <h2>The Origin</h2>
+                        <p>Date of start:</p>
+                        <p>Date of end:</p>
+                        <button class="btn-close">Close</button>
+                    </dialog>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+        <script>
+            document.querySelectorAll('.infobox').forEach(tarjeta => {
+                const botonOpen = tarjeta.querySelector('.btn-open');
+                const botonClose = tarjeta.querySelector('.btn-close');
+                const dialogo = tarjeta.querySelector('.modal-libro');
+
+                if (botonOpen && dialogo) {
+                    botonOpen.addEventListener('click', () => dialogo.showModal());
+                }
+                
+                if (botonClose && dialogo) {
+                    botonClose.addEventListener('click', () =>  dialogo.close());
+                }    
+            }); 
+        </script>
     </body>
 </html>
