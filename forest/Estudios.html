@@ -14,6 +14,22 @@
             <a href= "../index.html">
                 <img src="../assets/home.svg" class="logo">
             </a>
+            <div class="form">
+                <button class="btn-open">Click to fill the form</button>
+                <dialog class="modal-tarjeta">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="21b9dc6e-21d9-4192-96c1-b9695bf581a1">
+                    <p>Name:</p>
+                    <input type="text" name="name" required>
+                    <p>Email</p>
+                    <input type="email" name="email" required>
+                    <p>Project</p>
+                    <textarea name="message" required></textarea>
+                    <button type="submit">Submit</button>
+                    <button type ="button" class="btn-close">Close</button>
+                </form>
+                </dialog>
+            </div>
         </nav>
         <section id="Spaceprojects">
             <div class="intro">

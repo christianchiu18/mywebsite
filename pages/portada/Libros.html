@@ -14,6 +14,27 @@
             <a href="../../index.html">
                 <img src="../../assets/home.svg" class="logo">
             </a>
+            <div class="form">
+
+                <button class="btn-open">Click to fill the form</button>
+
+                <dialog class="modal-tarjeta">
+
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="21b9dc6e-21d9-4192-96c1-b9695bf581a1">
+                        <p>Name:</p>
+                        <input type="text" name="name" required>
+                        <p>Email</p>
+                        <input type="email" name="email" required>
+                        <p>Project</p>
+                        <textarea name="message" required></textarea>
+                        <button type="submit">Submit</button>
+                        <button type ="button" class="btn-close">Close</button>
+                    </form>
+                </dialog>
+
+            </div>
+
         </nav>
         <section id="Spaceprojects">
             <div class="intro">
@@ -63,6 +84,7 @@
                         <li>El caso de Alaska Sanders</li>
                         <li>El libro de los Baltimore</li>
                         <li>La desaparición de Stephanie Mailer</li>
+                        <li>Animal Salvaje</li>
                     </ul>
                 </div>
                 <div class="infobox">
@@ -75,6 +97,7 @@
                     <ul>
                         <li>It</li>
                         <li>The Shining</li>
+                        <li>The eyes of the dragon</li>
                     </ul>
                 </div>
             </div>
@@ -571,6 +594,47 @@
 
                         </span>
                         <button class="btn-close">Close</button>
+                    </dialog>
+                </div>
+            </div>
+            <div class="intro">Fiction</div>
+            <div class="books-grid">
+                <div class="infobox">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.q93raZXmfsPy4ZqwRcxsDwHaLL?r=0&pid=Api&h=220&P=0">
+                    <h3>Carl el mazmorrero</h3>
+                    <p>Author: Matt Dinniman</p>
+                    <button class="btn-open">See Details</button>
+
+                    <dialog class="modal-libro">
+                        <h2>Carl el Mazmorrero</h2>
+                        <p>Date of start:</p>
+                        <p>Date of end:</p>
+                        <p>Comments:</p>
+                        <p>This book is hilarious. The plot is nonsense, but it uses humor to make a huge critic to society. This book is amazing</p>
+                        <span>
+                            Rating
+                            <img src="../../assets/books/star.svg">
+                            <img src="../../assets/books/star.svg">
+                            <img src="../../assets/books/star.svg">
+                            <img src="../../assets/books/star.svg">
+                            <img src="../../assets/books/star.svg">
+
+                        </span>
+                        <button class="btn-close">Close</button>
+                    </dialog>
+                </div>
+                <div class="infobox">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.O047oL-sJNMK13QAgzMdRQHaL3?r=0&pid=Api&h=220&P=0">
+                    <h2>Harry Potter</h2>
+                    <p>Author: J.K. Rowlings</p>
+                    <button class="btn-open">See Details</button>
+                    <dialog class="modal-libro">
+                        <h2>Harry Potter</h2>
+                        <p>Date of start</p>
+                        <p>Date of end</p>
+                        <p>Comment:</p>
+                        <p>I read it when I was little,, I liked it quite much</p>
+                        
                     </dialog>
                 </div>
             </div>
